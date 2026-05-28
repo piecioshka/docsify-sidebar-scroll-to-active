@@ -1,0 +1,28 @@
+{
+  "name": "docsify-sidebar-scroll-to-active",
+  "description": "🔨 Docsify plugin that scrolls the sidebar to the active item on page load — zero dependencies, ~50 LOC.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Piotr Kowalski",
+    "email": "piecioshka@gmail.com",
+    "url": "https://piecioshka.pl/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piecioshka/docsify-sidebar-scroll-to-active.git"
+  },
+  "files": [
+    "index.js",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "docsify",
+    "docsify-plugin",
+    "sidebar",
+    "scroll",
+    "active",
+    "navigation"
+  ],
+  "main": "index.js"
+}
