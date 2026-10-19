@@ -7,7 +7,7 @@
 [![license](https://img.shields.io/npm/l/docsify-sidebar-scroll-to-active.svg)](https://piecioshka.mit-license.org)
 
 🔨 A tiny [Docsify](https://docsify.js.org/) plugin that scrolls the sidebar to
-the currently active item on page load — so users always see "you are here"
+the currently active item on page load, so users always see "you are here"
 without having to scan the menu.
 
 Zero dependencies, ~50 lines of code.
@@ -39,30 +39,22 @@ npm install docsify-sidebar-scroll-to-active
 
 ## Usage
 
-No configuration. Drop the tag in — the plugin registers itself with Docsify
+No configuration. Drop the tag in: the plugin registers itself with Docsify
 via `window.$docsify.plugins` and runs on the `ready` hook.
 
 The plugin looks for:
 
-- `aside.sidebar` — the Docsify sidebar container
-- `li.active > a` (preferred) or `li.active` — the currently active item
+- `aside.sidebar` - the Docsify sidebar container
+- `li.active > a` (preferred) or `li.active` - the currently active item
 
 If both are present, the sidebar's `scrollTop` is set so the active item is
 vertically centered within the visible sidebar area.
 
 If either is missing, the plugin does nothing.
 
-## How it works
+## Contributing
 
-```js
-hook.ready(() => requestAnimationFrame(scrollSidebarToActive));
-```
-
-- Runs on Docsify's `ready` event (first render complete).
-- Defers to the next animation frame so layout numbers are stable.
-- Computes the offset by walking `offsetParent` chain up to the sidebar,
-  which is more reliable than `offsetTop` alone when the active item sits
-  inside nested `<ul>` blocks with their own positioning context.
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
