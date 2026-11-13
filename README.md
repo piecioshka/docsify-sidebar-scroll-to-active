@@ -12,6 +12,8 @@ without having to scan the menu.
 
 Zero dependencies, ~50 lines of code.
 
+![docsify-sidebar-scroll-to-active - demo opened on chapter 20, sidebar scrolled to the active item](docs/screenshots/demo.png)
+
 ## Installation
 
 ### Via CDN (recommended)
